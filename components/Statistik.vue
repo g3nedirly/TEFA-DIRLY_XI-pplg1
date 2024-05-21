@@ -1,48 +1,49 @@
 <template>
   <div>
-    <canvas id="myChart"></canvas>
+      <canvas id="myChart"></canvas>
   </div>
 </template>
-
 
 <script setup>
 import Chart from 'chart.js/auto';
 
-const labels = [
-  'Januari',
-  'Februari',
-  'March',
-  'April',
-  'May',
-  'June',
+const labels=[
+  'january',
+  'february',
+  'march',
+  'april',
+  'may',
+  'june',
+  
 ];
 
-  const data = {
-    labels: labels,
-    datasets: [{
-      label: 'My First dataset',
-      backgroundColor: 'rgb(211, 211, 211)',
+const data= {
+  labels : labels,
+  datasets: [{
+      label: 'Pengunjung',
+      backgroundColor: [
+      'rgb(217, 217, 217)',  
+      'rgb(217, 217, 217)',
+      'rgb(217, 217, 217)',
+      'rgb(217, 217, 217)',
+      'rgb(217, 217, 217)',
+      'rgb(158, 90, 94)',
+      ],
       borderColor: 'rgb(255, 99, 132)',
-      data: [13, 19, 22, 17, 18, 20, 30, 35],
-    }]
-  };
+      data: [5, 15, 12, 12, 20],
+  }]
+};
 
-  const config = {
-    type: 'bar',
-    data: data,
-    Options: {}
-  };
+const config = {
+  type: 'bar',
+  data: data,
+  options: {}
+};
 
-onMounted(() => {
-  const myChart = new Chart (
-    document.getElementById('myChart'),
-    config
-  );
+onMounted(()=>{
+  const myChart = new Chart(
+  document.getElementById('myChart'),
+  config
+);
 })
 </script>
-
-<template>
-  <div>
-    <canvas id="myChart"></canvas>
-  </div>
-</template>
