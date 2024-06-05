@@ -8,7 +8,7 @@
                         <input v-model="keyword" type="search" class="form-control rounded-5" placeholder="Filter...">
                     </form>
           </div>
-          <div class="my-3 text-muted">Menampilkan 1 dari 1</div>
+          <div class="my-3 text-muted">menampilkan daftar riwayat kunjungan</div>
           <table class="table table-bordered">
             <thead>
               <tr>
@@ -40,9 +40,7 @@
   
   <script setup>
   const supabase = useSupabaseClient()
-
   const keyword = ref('')
-  
   const visitors = ref ([])
   
   const getPengunjung = async () => {
@@ -59,6 +57,7 @@
   onMounted(() => {
     getPengunjung()
     getBuku()
+   
   })
   </script>
   <style scoped>
