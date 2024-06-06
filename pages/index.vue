@@ -23,6 +23,7 @@
   
         <h2 class="mt-5" style="margin-left: 150px;">STATISTIK</h2>
         <div class="row my-5 justify-content-around">
+          
           <div class="col-lg-5">
             
               <div class="card bg-spengunjung rounded-5">
@@ -36,18 +37,19 @@
             
           </div>
   
-        <div class="col-lg-5">
-       
+        <div class=" col-lg-5">
+          <NuxtLink to="http://localhost:3000/buku">
             <div class="card bg-sbuku rounded-5">
               <div class="card-body">
                 <div class="row">
                   <div class="col p-5"></div>
-                  <div class="col mt-5 p-5"><h2 style="font-size: 70px; margin-right: 200px"><span class="no">{{ jml_buku }}</span>Buku</h2></div>
+                  <div class="col mt-5 p-5 bu"><h2 style="font-size: 70px; margin-right: 200px"><span class="no">{{ jml_buku }}</span>Buku</h2></div>
                 </div>
               </div>
             </div>
-          </div>
+          </NuxtLink>
         </div>
+      </div>
     </div>
       <div>
         <div class="line">
@@ -84,6 +86,9 @@ onMounted(() => {
   
   
   <style scoped>
+  .bu{
+    color:black;
+  }
   .card {
     height: 250px;
     box-shadow: 1px 1px 10px #424242;
