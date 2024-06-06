@@ -29,15 +29,16 @@
 <script setup>
 const supabase = useSupabaseClient()
 const keyword = ref("")
-const books = ref([]);
 const totalBuku = ref(0);
+const books = ref([]);
 const getBuku = async () => {
   const { data, error} = await supabase.from('Buku').select('* kategori(*)')
   .ilike('judul',`%${keyword.value}%`)
   if(data) books.value= data
 }
 const getTotalBuku = async () => {
-  const { count, error } = await supabase.from("buku").select("*, kategori(*)", { count: "exact", head: true });
+  const { count, error } = await supabase.from('Buku').select("*, kategori(*)", { count: "exact", head: true });
+  if (error) throw error
   if (count) totalBuku.value = count;
 };
 
