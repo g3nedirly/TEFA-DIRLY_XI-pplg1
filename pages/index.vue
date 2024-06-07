@@ -34,10 +34,7 @@
               </div>
             </div>
           </NuxtLink>
-              
-            
-          </div>
-  
+        </div>
         <div class=" col-lg-5">
             <div class="card bg-sbuku rounded-5">
               <div class="card-body">
