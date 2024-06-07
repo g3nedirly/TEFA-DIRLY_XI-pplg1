@@ -25,15 +25,15 @@
         <div class="row my-5 justify-content-around">
           
           <div class="col-lg-5">
-            <NuxtLink to="http://localhost:3000/pengunjung"><div class="card bg-spengunjung rounded-5">
+            <div class="card bg-spengunjung rounded-5">
               <div class="card-body">
                 <div class="row">
                   <div class=" form-pengunjung col p-5"></div>
-                  <div class="form-pengunjung col mt-5 p-5 bu"><h2 style="font-size: 70px; margin-right: 80px "><span class="no">{{ jml_pengunjung }}</span>Pengunjung</h2></div>
+                  <div class="form-pengunjung col mt-5 p-5 "><h2 style="font-size: 70px; margin-right: 80px "><span class="no">{{ jml_pengunjung }}</span>Pengunjung</h2></div>
                 </div>
               </div>
             </div>
-          </NuxtLink>
+         
         </div>
         <div class=" col-lg-5">
             <div class="card bg-sbuku rounded-5">
@@ -82,9 +82,6 @@ onMounted(() => {
   
   
   <style scoped>
-  .bu{
-    color:black;
-  }
   .card {
     height: 250px;
     box-shadow: 1px 1px 10px #424242;
