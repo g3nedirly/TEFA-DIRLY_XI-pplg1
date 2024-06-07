@@ -25,29 +25,28 @@
         <div class="row my-5 justify-content-around">
           
           <div class="col-lg-5">
-            
-              <div class="card bg-spengunjung rounded-5">
+            <NuxtLink to="http://localhost:3000/pengunjung"><div class="card bg-spengunjung rounded-5">
               <div class="card-body">
                 <div class="row">
                   <div class=" form-pengunjung col p-5"></div>
-                  <div class="form-pengunjung col mt-5 p-5"><h2 style="font-size: 70px; margin-right: 80px "><span class="no">{{ jml_pengunjung }}</span>Pengunjung</h2></div>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-  
-        <div class=" col-lg-5">
-          <NuxtLink to="http://localhost:3000/buku">
-            <div class="card bg-sbuku rounded-5">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col p-5"></div>
-                  <div class="col mt-5 p-5 bu"><h2 style="font-size: 70px; margin-right: 200px"><span class="no">{{ jml_buku }}</span>Buku</h2></div>
+                  <div class="form-pengunjung col mt-5 p-5 bu"><h2 style="font-size: 70px; margin-right: 80px "><span class="no">{{ jml_pengunjung }}</span>Pengunjung</h2></div>
                 </div>
               </div>
             </div>
           </NuxtLink>
+              
+            
+          </div>
+  
+        <div class=" col-lg-5">
+            <div class="card bg-sbuku rounded-5">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col p-5"></div>
+                  <div class="col mt-5 p-5 "><h2 style="font-size: 70px; margin-right: 200px"><span class="no">{{ jml_buku }}</span>Buku</h2></div>
+                </div>
+              </div>
+            </div>
         </div>
       </div>
     </div>
